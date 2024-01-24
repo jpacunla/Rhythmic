@@ -1,0 +1,54 @@
+-- MySQL dump 10.13  Distrib 8.0.31, for Win64 (x86_64)
+--
+-- Host: localhost    Database: rhythmic
+-- ------------------------------------------------------
+-- Server version	8.0.31
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `playing`
+--
+
+DROP TABLE IF EXISTS `playing`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `playing` (
+  `playing` int NOT NULL AUTO_INCREMENT,
+  `roomid` varchar(45) DEFAULT NULL,
+  `videoid` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`playing`),
+  UNIQUE KEY `playing_UNIQUE` (`playing`),
+  UNIQUE KEY `roomid_UNIQUE` (`roomid`)
+) ENGINE=InnoDB AUTO_INCREMENT=278 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `playing`
+--
+
+LOCK TABLES `playing` WRITE;
+/*!40000 ALTER TABLE `playing` DISABLE KEYS */;
+INSERT INTO `playing` VALUES (1,'24e8ec12-e9a6-62e1-54f2-78bdcfb9ada9','eiAfZurijjE'),(46,'90a7e35e-06a0-b8f2-75ac-9f7f12924e39','4sbzBg2NNBg'),(48,'9e9db523-cb27-99fb-53ea-59a465248751','eiAfZurijjE'),(56,'f6abe8c7-dc0c-67d4-0d8a-2e72a0f9426d','274oIUNfFGc'),(65,'e69ea978-952e-92f7-25c6-fb68d459d413','ps8vopZaouw'),(80,'1b84c240-6be1-8366-4892-4b89f938c542','fMlyH-A4wzg'),(81,'df813a78-17b7-d824-74a9-aac25ad58192','4sbzBg2NNBg'),(84,'f93656f4-8d6f-8382-ffe7-8a47345f944a','8846-5w-MlA'),(114,'ef991b27-d606-763a-7312-9e6b784c5517','-yT5PYFkRLM'),(138,'0069a1a3-0d38-2f7e-219b-1c80817a03a2','sxMsnOTfM_w'),(141,'9cbc1901-0748-5336-a0bb-c5f605f617c2','Z1inoxJlIHU'),(158,'de5025a4-e006-4428-43f4-82cbd1144507','4sbzBg2NNBg'),(164,'3d0ae99a-f21a-e81f-b55e-942a09b1d1c6','hNmgGtSTqb8'),(165,'e31c16ff-cc4c-57f9-cc96-f0ad617e6316','8846-5w-MlA'),(230,'6018b951-6151-17cc-5fb6-bc916ec319c8','H1TAEeO5YlE'),(238,'0b20e4e3-970b-7d3a-e25b-9ff35552d2bd','owwEYrAIZFY'),(272,'798bfbdb-b566-fc4a-de46-b83ca3bf750a','r2Z3FJT8teg');
+/*!40000 ALTER TABLE `playing` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2024-01-24 11:10:04
